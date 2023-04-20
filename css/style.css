@@ -16,12 +16,20 @@ body {
 p {
   margin: 0;
 }
+
+.flex {
+    display: flex;
+}
+
 header {
     height: 59px;
-    display: flex;
     padding: 1em 1.25em;
     justify-content: start;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header--img {
@@ -34,22 +42,20 @@ header {
 }
 
 nav {
-    display: flex;
     margin-left: auto;
     gap: 2.5em;
     font-weight: 600;
 }
 
 main {
-    display: flex;
     flex-direction: column;
     padding-bottom: 2.5em;
+    align-items: center;
 }
 
 .featured-article {
-    display: flex;
     flex-direction: column;
-    background-image: url("images/featured-article-image.png");
+    background-image: url("/images/featured-article-image.png");
     background-size: cover;
     color: white;
     padding: 5.25em 1.25em 1.25em 1.25em;
@@ -57,11 +63,11 @@ main {
 }
 
 .main-article {
-    display: flex;
     flex-direction: column;
     color: #151515;
     padding: 2em 1.25em 1.25em 1.25em;
     gap: 01em;
+    text-align: left;
 }
 
 .main-article-img {
@@ -78,7 +84,6 @@ main {
 }
 
 .profile-container-text-extra {
-    display: flex;
     flex-direction: column;
     gap: 1em;
     line-height: 1.5;
@@ -104,14 +109,12 @@ main {
 }
 
 .feed-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2em;
 }
 
 .feed {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2em 1.25em 1.7em 1.25em;
@@ -119,7 +122,6 @@ main {
 }
 
 .article {
-    display: flex;
     flex-direction: column;
 }
 
@@ -150,7 +152,6 @@ a {
     font-size: 1rem;
     line-height: 1.25em;
     color: inherit;
-    text-align: center;
 }
 
 footer {
@@ -181,13 +182,11 @@ footer {
     }
     
     .profile-container {
-        display: flex;
         gap: 2em;
         padding-bottom: 2em;
     }
     
     .profile-container-text {
-        display: flex;
         flex-direction: column;
     }
     
